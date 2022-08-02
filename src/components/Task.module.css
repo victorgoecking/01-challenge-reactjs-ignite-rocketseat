@@ -1,0 +1,17 @@
+.taskBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: var(--gray-300);
+
+  border: 0;
+  border-radius: 8px;
+}
+
+.taskContent {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+}

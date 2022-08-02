@@ -42,10 +42,6 @@ function App() {
           </article>
         </main>
       </div>
-
-      {/* <div className={styles.content}>
-        
-      </div> */}
     </div>
   )
 }

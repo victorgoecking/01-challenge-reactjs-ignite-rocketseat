@@ -1,12 +1,13 @@
 import { useState } from 'react'
-import { Header } from './components/Header';
-
-import styles from './App.module.css';
-import './global.css';
 import {PlusCircle } from 'phosphor-react';
-import ClipboardSvg from './assets/clipboard.svg';
 
 import { Task } from './components/Task';
+import { Header } from './components/Header';
+
+import './global.css';
+import styles from './App.module.css';
+import ClipboardSvg from './assets/clipboard.svg';
+
 
 function App() {
   const [count, setCount] = useState(0)

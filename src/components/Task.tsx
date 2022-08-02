@@ -6,9 +6,11 @@ export function Task() {
     <div className={styles.taskBox}>
       <div className={styles.taskContent}>
         <input type="checkbox" />
-        <span>Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.</span>
+        <span>Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer. Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer. Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer. Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.</span>
       </div>
-      <Trash size={14} />
+      <button title="Deletar tarefa">
+        <Trash size={14} />
+      </button>
     </div>
   )
 }

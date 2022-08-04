@@ -23,7 +23,7 @@ export function Task({ id, description, isFinished, onFinishedTask, onDeleteTask
     <div className={styles.taskBox}>
       <div className={styles.taskContent}>
         <label className={styles.checkboxContainer}>
-          <input type="checkbox" checked={isFinished} onChange={handleFinishedTask}/>
+          <input type="checkbox" onChange={handleFinishedTask}/>
           <span className={styles.checkmark}></span>
         </label>
         <span className={isFinished ? styles.descriptionTaskFinished : styles.descriptionTask}>

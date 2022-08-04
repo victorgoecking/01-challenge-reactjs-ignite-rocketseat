@@ -36,7 +36,11 @@
   align-items: center;
 }
 
-.newTask {
+.wrapper .newTask{
+  width: 100%;
+}
+
+.taskForm {
   width: 100%;
   display: flex;
   align-items: center;
@@ -44,7 +48,7 @@
   margin-top: -1.6875rem;
 }
 
-.newTask input {
+.taskForm input {
   flex: 1;
   margin-right: 0.5rem;
   padding: 1rem;
@@ -56,8 +60,11 @@
   background: var(--gray-500);
   color: var(--gray-300);
 }
+.taskForm input:focus {
+  color: var(--gray-100);
+}
 
-.newTask button {
+.taskForm button {
   display: flex;
   align-items: center;
 
@@ -73,11 +80,11 @@
   cursor: pointer;
   transition: background-color 0.1s;
 }
-.newTask button span {
+.taskForm button span {
   margin-right: 0.5rem;
 }
 
-.newTask button:hover {
+.taskForm button:hover {
   background: var(--blue);
 }
 
@@ -124,11 +131,18 @@
   border-radius: 8px;
 }
 
-.content article img {
+.noTask {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.noTask img {
   margin-top: 4rem;
   margin-bottom: 1rem;
 }
-.content article p {
+.noTask p {
   font-size: 1rem;
   line-height: 1.4;
   color: var(--gray-300);
